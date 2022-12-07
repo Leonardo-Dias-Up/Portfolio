@@ -1,5 +1,5 @@
 {
-  "name": "personal-portfolio",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,7 +21,7 @@
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.3.0",
     "react-router-hash-link": "^2.4.3",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
   "homepage": "https://leonardo-dias-up.github.io/Portfolio/",
@@ -50,5 +50,19 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leonardo-Dias-Up/Portfolio.git"
+  },
+  "author": "leonardo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leonardo-Dias-Up/Portfolio/issues"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
