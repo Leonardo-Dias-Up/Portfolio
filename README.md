@@ -1,5 +1,5 @@
-[![forthebadge made-with-react](http://ForTheBadge.com/images/badges/made-with-react.svg)](https://img.shields.io/badge/React-18.2.0-blue.svg)             
-[![Python 3.6](https://img.shields.io/badge/React-18.2.0-blue.svg)]  
+          
+![React 18.2.0](https://img.shields.io/badge/React-18.2.0-blue.svg)
 
 
 # Personal Portfolio Website in React
