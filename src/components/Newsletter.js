@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import { Col, Row, Alert } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import emailjs from '@emailjs/browser';
 import React, { useRef } from 'react';
 

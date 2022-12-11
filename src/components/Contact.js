@@ -1,11 +1,9 @@
 import React, { useRef } from 'react';
-import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import projImg1 from "../assets/img/project-img1.png";
 import emailjs from '@emailjs/browser';
-import { Alert } from 'bootstrap';
 // https://www.youtube.com/watch?v=bMq2riFCF90
 // https://www.emailjs.com/docs/examples/reactjs/
 
