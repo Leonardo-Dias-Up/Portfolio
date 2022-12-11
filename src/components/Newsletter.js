@@ -1,25 +1,28 @@
 import { useState, useEffect } from "react";
 import { Col, Row, Alert } from "react-bootstrap";
+import emailjs from '@emailjs/browser';
+import React, { useRef } from 'react';
 
-export const Newsletter = ({ status, message, onValidated }) => {
-  const [email, setEmail] = useState('');
+// https://www.youtube.com/watch?v=bMq2riFCF90
+// https://www.emailjs.com/docs/examples/reactjs/
 
-  useEffect(() => {
-    if (status === 'success') clearFields();
-  }, [status])
-
-  const handleSubmit = (e) => {
+export const Newsletter = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
     e.preventDefault();
-    email &&
-    email.indexOf("@") > -1 &&
-    onValidated({
-      EMAIL: email
-    })
-  }
-
-  const clearFields = () => {
-    setEmail('');
-  }
+    
+    emailjs.sendForm('service_in40d6a', 'template_89zueyg', form.current, 'slJzTs9Xrr20-oBkS')
+      .then((result) => {
+          console.log(result.text);
+          console.log('message sent');
+          showAlert();
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+  const showAlert = () => {
+    alert("Email was ben send, thanks for the subscribe.");
+  };
 
   return (
       <Col lg={12}>
@@ -27,14 +30,11 @@ export const Newsletter = ({ status, message, onValidated }) => {
           <Row>
             <Col lg={12} md={6} xl={5}>
               <h3>Subscribe to our Newsletter<br></br> & Never miss latest updates</h3>
-              {status === 'sending' && <Alert>Sending...</Alert>}
-              {status === 'error' && <Alert variant="danger">{message}</Alert>}
-              {status === 'success' && <Alert variant="success">{message}</Alert>}
             </Col>
             <Col md={6} xl={7}>
-              <form onSubmit={handleSubmit}>
+              <form ref={form} onSubmit={sendEmail}>
                 <div className="new-email-bx">
-                  <input value={email} type="email" onChange={(e) => setEmail(e.target.value)} placeholder="Email Address" />
+                  <input type="email" placeholder="Email Address" name="email_subscribe" />
                   <button type="submit">Submit</button>
                 </div>
               </form>
