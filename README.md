@@ -1,3 +1,7 @@
+          
+![React 18.2.0](https://img.shields.io/badge/React-18.2.0-blue.svg)
+
+
 # Personal Portfolio Website in React
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
