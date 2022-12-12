@@ -36,6 +36,8 @@ body {
   font-family: 'Centra', sans-serif !important;
 }
 
+a, a:hover, a:active, a:visited , a:link{ color: white; }
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -384,7 +386,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   z-index: 0;
 }
-.project .nav.nav-pills .nav-link::before {
+.project .a .nav.nav-pills .nav-link::before {
     content: "";
     position: absolute;
     width: 0;

@@ -1,44 +1,126 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
-import 'animate.css';
+import dashplotly from "../assets/img/dash-plotly.png";
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
-  const projects = [
+  const dataAnalisys = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Plotly Dashboard",
+      description: "Data Analisys & Development",
+      imgUrl: dashplotly,
+      link:'https://dash.up.railway.app/',
     },
     {
       title: "Business Startup",
-      description: "Design & Development",
+      description: "Data Analisys & Development",
       imgUrl: projImg2,
+      link:'https://dash.up.railway.app/',
     },
     {
       title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
+      description: "Data Analisys & Development",
       imgUrl: projImg2,
+      link:'https://dash.up.railway.app/',
     },
     {
       title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      description: "Data Analisys & Development",
+      imgUrl: projImg2,
+      link:'https://dash.up.railway.app/',
+    },
+    {
+      title: "Business Startup",
+      description: "Data Analisys & Development",
+      imgUrl: projImg2,
+      link:'https://dash.up.railway.app/',
+    },
+    {
+      title: "Business Startup",
+      description: "Data Analisys & Development",
+      imgUrl: projImg2,
+      link:'https://dash.up.railway.app/',
+    },
+  ];
+
+  const webdev = [
+    {
+      title: "Business Startup",
+      description: "Data Analisys & Development",
+      imgUrl: projImg2,
+      link:'https://dash.up.railway.app/',
+    },
+    {
+      title: "Business Startup",
+      description: "Data Analisys & Development",
+      imgUrl: projImg2,
+      link:'https://dash.up.railway.app/',
+    },
+    {
+      title: "Business Startup",
+      description: "Data Analisys & Development",
+      imgUrl: projImg2,
+      link:'https://dash.up.railway.app/',
+    },
+    {
+      title: "Business Startup",
+      description: "Data Analisys & Development",
+      imgUrl: projImg2,
+      link:'https://dash.up.railway.app/',
+    },
+    {
+      title: "Business Startup",
+      description: "Data Analisys & Development",
+      imgUrl: projImg2,
+      link:'https://dash.up.railway.app/',
+    },
+    {
+      title: "Business Startup",
+      description: "Data Analisys & Development",
+      imgUrl: projImg2,
+      link:'https://dash.up.railway.app/',
+    },
+
+  ];
+
+  const mobile = [
+    {
+      title: "Business Startup",
+      description: "Data Analisys & Development",
+      imgUrl: projImg2,
+      link:'https://dash.up.railway.app/',
+    },
+    {
+      title: "Business Startup",
+      description: "Data Analisys & Development",
+      imgUrl: projImg2,
+      link:'https://dash.up.railway.app/',
+    },
+    {
+      title: "Business Startup",
+      description: "Data Analisys & Development",
+      imgUrl: projImg2,
+      link:'https://dash.up.railway.app/',
+    },
+    {
+      title: "Business Startup",
+      description: "Data Analisys & Development",
+      imgUrl: projImg2,
+      link:'https://dash.up.railway.app/',
+    },
+    {
+      title: "Business Startup",
+      description: "Data Analisys & Development",
+      imgUrl: projImg2,
+      link:'https://dash.up.railway.app/',
+    },
+    {
+      title: "Business Startup",
+      description: "Data Analisys & Development",
+      imgUrl: projImg2,
+      link:'https://dash.up.railway.app/',
     },
   ];
 
@@ -68,11 +150,11 @@ export const Projects = () => {
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
-                          projects.map((project, index) => {
+                          dataAnalisys.map((dataAnalisys, index) => {
                             return (
                               <ProjectCard
                                 key={index}
-                                {...project}
+                                {...dataAnalisys}
                                 />
                             )
                           })
@@ -82,11 +164,11 @@ export const Projects = () => {
                     <Tab.Pane eventKey="second">
                       <Row>
                         {
-                          projects.map((project, index) => {
+                          webdev.map((webdev, index) => {
                             return (
                               <ProjectCard
                                 key={index}
-                                {...project}
+                                {...webdev}
                                 />
                             )
                           })
@@ -98,11 +180,11 @@ export const Projects = () => {
                     <Tab.Pane eventKey="third">
                       <Row>
                         {
-                          projects.map((project, index) => {
+                          mobile.map((mobile, index) => {
                             return (
                               <ProjectCard
                                 key={index}
-                                {...project}
+                                {...mobile}
                                 />
                             )
                           })
